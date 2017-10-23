@@ -9,7 +9,7 @@ oppgaven. Jern har egenvekt 7.8 kg/ dm 3 .
 Til denne oppgaven trenger vi variabler for eventuelt lengde-, bredde-, høyde- og
 eventuelt radius-mål. Les hele oppgave-teksten nøye før du starter.
 
-a) Se på figur 11.1 i boka side 433 (10.utg.) der klassene GeometricObject,
+a) Se på figur 11.1 i boka side 409 (9.utg) (433 (10.utg.)) der klassene GeometricObject,
 Circle og Rectangle kan gi deg en idé om hvordan du skal bygge opp en
 struktur/arv for denne oppgaven. Figuren tar for seg kun 2 nivåer av arv.
 Klassen GeometricObject skal være abstract. Definer de variablene du mener

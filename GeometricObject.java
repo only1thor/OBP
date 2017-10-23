@@ -7,24 +7,45 @@ public abstract class GeometricObject
 	private int hight;
 	private int radius;
 	
-	float findArea()
+	float abstract findArea();
+	float abstract findVolume();
+	float abstract findCircumference();
+	float abstract findSurfaceArea();
+	
+	// Getters and setters:
+	int getNumberOfObjects()
 	{
-		return length*hight;
+		return numberOfObjects;
+	}
+	int getLength()
+	{
+		return this.length;
+	}
+	void setLength(int x)
+	{
+		this.length=x;
+	}
+	int getHight()
+	{
+		return this.hight;
+	}
+	void setHight(int x)
+	{
+		this.hight=x;
+	}
+	int getRadius()
+	{
+		return this.radius;
+	}
+	void setRadius(int x)
+	{
+		this.radius=x;
 	}
 	
-	float findVolume()
-	{
-		
-	}
 	
-	float findCircumference()
+	void GeometricObject()
 	{
-		return radius*MATH.PI;
-	}
-	
-	float findSurfaceArea()
-	{
-		
+		numberOfObjects++;
 	}
 	
 	public static void main(String[] args)
