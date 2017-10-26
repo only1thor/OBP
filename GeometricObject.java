@@ -6,12 +6,12 @@ public abstract class GeometricObject
 	private int length;
 	private int hight;
 	private int radius;
-	private float materialDencity; //skal inneholde egenvekten til objektet
+	private double materialDencity; //skal inneholde egenvekten til objektet
 	
-	float abstract findArea();
-	float abstract findVolume();
-	float abstract findCircumference();
-	float abstract findSurfaceArea();
+	double abstract findArea();
+	double abstract findVolume();
+	double abstract findCircumference();
+	double abstract findSurfaceArea();
 	
 	
 	
