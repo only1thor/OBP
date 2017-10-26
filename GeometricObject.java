@@ -1,12 +1,10 @@
-import System.MATH;
-
 public abstract class GeometricObject
 {
 	private int numberOfObjects = 0;
-	private int length;
-	private int hight;
-	private int radius;
-	private double materialDencity; //skal inneholde egenvekten til objektet
+	int length;
+	int hight;
+	int radius;
+	double materialDencity; //skal inneholde egenvekten til objektet
 	
 	double abstract findArea();
 	double abstract findVolume();
@@ -49,11 +47,11 @@ public abstract class GeometricObject
 	{
 		this.radius=x;
 	}
-	int getMaterialDencity()
+	double getMaterialDencity()
 	{
 		return this.materialDencity;
 	}
-	void setMaterialDencity(int x)
+	void setMaterialDencity(double x)
 	{
 		this.materialDencity=x;
 	}
