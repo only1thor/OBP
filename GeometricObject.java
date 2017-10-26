@@ -6,13 +6,21 @@ public abstract class GeometricObject
 	private int length;
 	private int hight;
 	private int radius;
+	private float materialDencity; //skal inneholde egenvekten til objektet
 	
 	float abstract findArea();
 	float abstract findVolume();
 	float abstract findCircumference();
 	float abstract findSurfaceArea();
 	
+	
+	
 	// Getters and setters:
+	//#####
+	//# Bør disse være abstrakte?? eller bare passe på at de kan 
+	//# hentes i 3d objektene via 2d objektene? 
+	//# (siden man ikke kan hente lengre en 1 arve nivå over.)
+	//#####
 	int getNumberOfObjects()
 	{
 		return numberOfObjects;
@@ -40,6 +48,14 @@ public abstract class GeometricObject
 	void setRadius(int x)
 	{
 		this.radius=x;
+	}
+	int getMaterialDencity()
+	{
+		return this.materialDencity;
+	}
+	void setMaterialDencity(int x)
+	{
+		this.materialDencity=x;
 	}
 	
 	
