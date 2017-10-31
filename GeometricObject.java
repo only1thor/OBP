@@ -8,14 +8,6 @@ public abstract class GeometricObject
 	abstract double findSurfaceArea();
 	abstract double findWeight();
 	
-	
-	
-	// Getters and setters:
-	//#####
-	//# Bør disse være abstrakte?? eller bare passe på at de kan 
-	//# hentes i 3d objektene via 2d objektene? 
-	//# (siden man ikke kan hente lengre en 1 arve nivå over.)
-	//#####
 	double getMaterialDencity()
 	{
 		return this.materialDencity;
@@ -26,11 +18,11 @@ public abstract class GeometricObject
 		this.materialDencity=x;
 	}
 	
-	
 	void GeometricObject()
 	{
 		setMaterialDencity(7.8);
 	}
+	
 	public static void main(String[] args)
 	{
 	    
