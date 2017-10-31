@@ -6,6 +6,7 @@ public abstract class GeometricObject
 	double abstract findVolume();
 	double abstract findCircumference();
 	double abstract findSurfaceArea();
+	double abstract findWeight();
 	
 	
 	
