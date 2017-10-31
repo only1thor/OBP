@@ -3,16 +3,39 @@ import System.Math; //import so i can use the PI constant.
 public abstract class Circle extends GeometricObject
 {
 	int radius;
+	GeometricObject(); //construktor? er det her jeg "lager" et geometrisk objekt?
+						// er det denne som gir meg super sine vaiabbler? 
+						// eller er det det som gjøres i konstruktoren?
+	abstract double findArea();
+	abstract double findVolume();
+	abstract double findSurfaceArea();
+	abstract double findWeight();
 	
-	double findArea();
-	double abstract findVolume();
 	double findCircumference()
 	{
-		return radius*radius*Math.PI;
+		return 2*radius*Math.PI;
 	}
-	double abstract findSurfaceArea();
+	int getRadius()
+	{
+		return this.radius;
+	}
+	void setRadius(int x)
+	{
+		this.radius=x;
+	}
 	
-	GeometricObject(); //construktor? er det her jeg "lager" et geometrisk objekt?
+	Circle()
+	{
+		super();
+		radius = 1;
+	}
+	
+	Circle(x)
+	{
+		super();
+		radius=x;
+	}
+	
 	public static void main(String[] args)
 	{
 	    
