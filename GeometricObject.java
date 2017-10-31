@@ -1,6 +1,6 @@
 public abstract class GeometricObject
 {
-	double materialDencity; //skal inneholde egenvekten til objektet
+	static double materialDencity; //skal inneholde egenvekten til objektet
 	
 	double abstract findArea();
 	double abstract findVolume();
@@ -29,10 +29,6 @@ public abstract class GeometricObject
 	{
 		setMaterialDencity(7.8);
 	}
-	void GeometricObject(double x)
-	{
-		setMaterialDencity(x);
-	
 	public static void main(String[] args)
 	{
 	    
