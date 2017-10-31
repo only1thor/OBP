@@ -61,6 +61,17 @@ public abstract class GeometricObject
 	{
 		numberOfObjects++;
 	}
+	void GeometricObject(int r)
+	{
+		numberOfObjects++;
+		setRadius(r);
+	}
+	void GeometricObject(int l, int h)
+	{
+		numberOfObjects++;
+		setLength(l);
+		setHight(h);
+	}
 	
 	public static void main(String[] args)
 	{

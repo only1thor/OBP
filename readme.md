@@ -6,14 +6,14 @@ metallvolumer basert på kjente geometriske figurer (3D figurer/objekter).
 Figurene vil være laget i metall. Av metall holder vi oss kun til jern i denne
 oppgaven. Jern har egenvekt 7.8 kg/ dm 3 .
 
-Til denne oppgaven trenger vi variabler for eventuelt lengde-, bredde-, høyde- og
-eventuelt radius-mål. Les hele oppgave-teksten nøye før du starter.
+Til denne oppgaven trenger vi variabler for eventuelt lengde-, bredde-, høyde- 
+og eventuelt radius-mål. Les hele oppgave-teksten nøye før du starter.
 
-a) Se på figur 11.1 i boka side 409 (9.utg) (433 (10.utg.)) der klassene GeometricObject,
-Circle og Rectangle kan gi deg en idé om hvordan du skal bygge opp en
-struktur/arv for denne oppgaven. Figuren tar for seg kun 2 nivåer av arv.
-Klassen GeometricObject skal være abstract. Definer de variablene du mener
-er nødvendig og fornuftig å definere i klassen. Konstruer nødvendige
+a) Se på figur 11.1 i boka side 409 (9.utg) (433 (10.utg.)) der klassene 
+GeometricObject, Circle og Rectangle kan gi deg en idé om hvordan du skal 
+bygge opp en struktur/arv for denne oppgaven. Figuren tar for seg kun 2 nivåer 
+av arv. Klassen GeometricObject skal være abstract. Definer de variablene du 
+mener er nødvendig og fornuftig å definere i klassen. Konstruer nødvendige
 ’constructors’ til hver klasse der variabler blir satt til konkrete verdier.
 Definér findArea, findVolume, findCircumference (omkrets), findSurfaceArea
 og findWeight som abstrakte metoder i GeometricObject-klassen. Definer
