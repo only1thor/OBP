@@ -2,11 +2,11 @@ public abstract class GeometricObject
 {
 	static double materialDencity; //skal inneholde egenvekten til objektet
 	
-	double abstract findArea();
-	double abstract findVolume();
-	double abstract findCircumference();
-	double abstract findSurfaceArea();
-	double abstract findWeight();
+	abstract double findArea();
+	abstract double findVolume();
+	abstract double findCircumference();
+	abstract double findSurfaceArea();
+	abstract double findWeight();
 	
 	
 	
@@ -20,6 +20,7 @@ public abstract class GeometricObject
 	{
 		return this.materialDencity;
 	}
+	
 	void setMaterialDencity(double x)
 	{
 		this.materialDencity=x;
