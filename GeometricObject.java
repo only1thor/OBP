@@ -1,9 +1,5 @@
 public abstract class GeometricObject
 {
-	private int numberOfObjects = 0;
-	int length;
-	int hight;
-	int radius;
 	double materialDencity; //skal inneholde egenvekten til objektet
 	
 	double abstract findArea();
@@ -19,34 +15,6 @@ public abstract class GeometricObject
 	//# hentes i 3d objektene via 2d objektene? 
 	//# (siden man ikke kan hente lengre en 1 arve nivå over.)
 	//#####
-	int getNumberOfObjects()
-	{
-		return numberOfObjects;
-	}
-	int getLength()
-	{
-		return this.length;
-	}
-	void setLength(int x)
-	{
-		this.length=x;
-	}
-	int getHight()
-	{
-		return this.hight;
-	}
-	void setHight(int x)
-	{
-		this.hight=x;
-	}
-	int getRadius()
-	{
-		return this.radius;
-	}
-	void setRadius(int x)
-	{
-		this.radius=x;
-	}
 	double getMaterialDencity()
 	{
 		return this.materialDencity;
@@ -59,19 +27,11 @@ public abstract class GeometricObject
 	
 	void GeometricObject()
 	{
-		numberOfObjects++;
+		setMaterialDencity(7.8);
 	}
-	void GeometricObject(int r)
+	void GeometricObject(double x)
 	{
-		numberOfObjects++;
-		setRadius(r);
-	}
-	void GeometricObject(int l, int h)
-	{
-		numberOfObjects++;
-		setLength(l);
-		setHight(h);
-	}
+		setMaterialDencity(x);
 	
 	public static void main(String[] args)
 	{
