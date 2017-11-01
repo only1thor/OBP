@@ -20,7 +20,7 @@ public abstract class GeometricObject
 	//###
 	// Constructors
 	//###
-	void GeometricObject()
+	GeometricObject()
 	{
 		setMaterialDencity(7.8);
 	}

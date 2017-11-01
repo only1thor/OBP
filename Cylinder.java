@@ -1,6 +1,24 @@
 class Cylinder extends Circle 
 {
 	private int height;
+
+
+	double findArea()
+	{
+		return 1.0;
+	}
+	double findVolume()
+	{
+		return 1.0;
+	}
+	double findSurfaceArea()
+	{
+		return 1.0;
+	}
+	double findWeight()
+	{
+		return 1.0;
+	}
 	
 	int getHeight()
 	{
@@ -11,7 +29,7 @@ class Cylinder extends Circle
 		this.height=x;
 	}
 	
-	findCircumference()
+	double findCircumference()
 	{
 		return super.findCircumference();// er det dette som lar meg benytte super sin metode?	
 	}
@@ -20,7 +38,7 @@ class Cylinder extends Circle
 	//###
 	// Constructors
 	//###
-	Cylinder(x)
+	Cylinder(int x)
 	{
 		super(x);
 		height=x;

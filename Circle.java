@@ -1,4 +1,4 @@
-import System.Math; //import so i can use the PI constant.
+//import System.Math; //import so i can use the PI constant.
 
 public abstract class Circle extends GeometricObject
 {
@@ -10,7 +10,7 @@ public abstract class Circle extends GeometricObject
 	
 	double findCircumference()
 	{
-		return 2*radius*Math.PI;
+		return 2*radius*3.14159;//Math.PI;
 	}
 	int getRadius()
 	{
@@ -30,7 +30,7 @@ public abstract class Circle extends GeometricObject
 		radius = 1;
 	}
 	
-	Circle(x)
+	Circle(int x)
 	{
 		super();
 		radius=x;
