@@ -17,38 +17,27 @@ class Cylinder extends Circle
 	//##
 	// methods
 	//##
-	double findArea()
+	double findArea() // (2*pi*r)*r*h + 2*pi*r*h 
 	{
-		return this.findCircumference()*super.getRadius() + super.getRadius()*height;
+		return super.findCircumference()*super.getRadius() + 2*Math.PI*super.getRadius()*height;
 	}
 	double findVolume()
 	{
-		return super.getRadius()*super.getRadius()*this.height*Math.PI;//3.141592654;
+		return super.getRadius() * super.getRadius() * this.height * Math.PI;
 	}
 	double findSurfaceArea()
 	{
-		return 1.0;
+		return findArea();
 	}
 	double findWeight()
 	{
-		return 1.0;
-	}
-	
-	
-	double findCircumference()
-	{
-		return super.findCircumference();// er det dette som lar meg benytte super sin metode?	
+		return findVolume()*this.getMaterialDencity();
 	}
 	
 
 	//###
 	// Constructors
 	//###
-	Cylinder(int x)
-	{
-		super(x);
-		height=x;
-	}
 	Cylinder(int r, int h)
 	{
 		super(r);
@@ -56,6 +45,6 @@ class Cylinder extends Circle
 	}
 	Cylinder()
 	{
-		this(1); // bruker metoden over (constructoren) til å sette default verdier. 
+		this(1,1); // bruker metoden over (constructoren) til å sette default verdier. 
 	}
 }
