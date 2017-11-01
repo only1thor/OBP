@@ -1,6 +1,6 @@
 public abstract class GeometricObject
 {
-	static double materialDencity; //skal inneholde egenvekten til objektet
+	private static double materialDencity; //skal inneholde egenvekten til objektet
 	
 	abstract double findArea();
 	abstract double findVolume();
