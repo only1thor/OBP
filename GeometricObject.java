@@ -22,9 +22,4 @@ public abstract class GeometricObject
 	{
 		setMaterialDencity(7.8);
 	}
-	
-	public static void main(String[] args)
-	{
-	    
-	}
 }
