@@ -17,7 +17,9 @@ public abstract class GeometricObject
 	{
 		this.materialDencity=x;
 	}
-	
+	//###
+	// Constructors
+	//###
 	void GeometricObject()
 	{
 		setMaterialDencity(7.8);

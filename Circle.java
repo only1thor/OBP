@@ -21,6 +21,9 @@ public abstract class Circle extends GeometricObject
 		this.radius=x;
 	}
 	
+	//###
+	// Constructors
+	//###
 	Circle()
 	{
 		super();

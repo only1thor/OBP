@@ -1,6 +1,6 @@
 class Cylinder extends Circle 
 {
-	int height;
+	private int height;
 	
 	int getHeight()
 	{
@@ -16,6 +16,10 @@ class Cylinder extends Circle
 		return super.findCircumference();// er det dette som lar meg benytte super sin metode?	
 	}
 	
+
+	//###
+	// Constructors
+	//###
 	Cylinder(x)
 	{
 		super(x);
@@ -29,11 +33,5 @@ class Cylinder extends Circle
 	Cylinder()
 	{
 		this(1); // bruker metoden over (constructoren) til å sette default verdier. 
-	}
-	
-	
-	public static void main(String[] args)
-	{
-	    
 	}
 }
