@@ -8,10 +8,9 @@ public abstract class Circle extends GeometricObject
 	abstract double findSurfaceArea();
 	abstract double findWeight();
 	
-	double findCircumference()
-	{
-		return 2*radius*3.14159;//Math.PI;
-	}
+	//##
+	// Getters and setters
+	//##
 	int getRadius()
 	{
 		return this.radius;
@@ -19,6 +18,14 @@ public abstract class Circle extends GeometricObject
 	void setRadius(int x)
 	{
 		this.radius=x;
+	}
+
+	//##
+	// Methods
+	//##
+	double findCircumference()
+	{
+		return 2*radius*Math.PI;
 	}
 	
 	//###

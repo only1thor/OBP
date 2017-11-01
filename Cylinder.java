@@ -2,14 +2,28 @@ class Cylinder extends Circle
 {
 	private int height;
 
+	//##
+	// Getters and setters
+	//##
+	int getHeight()
+	{
+		return this.height;
+	}
+	void setHeight(int x)
+	{
+		this.height=x;
+	}
 
+	//##
+	// methods
+	//##
 	double findArea()
 	{
-		return 1.0;
+		return this.findCircumference()*super.getRadius() + super.getRadius()*height;
 	}
 	double findVolume()
 	{
-		return 1.0;
+		return super.getRadius()*super.getRadius()*this.height*Math.PI;//3.141592654;
 	}
 	double findSurfaceArea()
 	{
@@ -20,14 +34,6 @@ class Cylinder extends Circle
 		return 1.0;
 	}
 	
-	int getHeight()
-	{
-		return this.height;
-	}
-	void setHeight(int x)
-	{
-		this.height=x;
-	}
 	
 	double findCircumference()
 	{
