@@ -1,17 +1,32 @@
 class Cylinder extends Circle 
 {
 	private int height;
+	private double thickness;
 
 	//##
 	// Getters and setters
 	//##
-	int getHeight()
+	public int getHeight()
 	{
-		return this.height;
+		return height;
 	}
-	void setHeight(int x)
+	public void setHeight(int x)
 	{
-		this.height=x;
+		height=x;
+	}
+	public double getThickness() {
+		return thickness;
+	}
+	public void setThickness(Double x) {
+		if (thickness <= getRadius() & thickness > 0 ) 
+		{
+			thickness = x;
+		}
+		else
+		{
+			thickness = getRadius()/2.0;
+			System.out.println("The thickness was invalid, thickness set to:" + getThickness() );
+		}
 	}
 
 	//##
@@ -19,11 +34,15 @@ class Cylinder extends Circle
 	//##
 	double findArea() // (2*pi*r)*r*h + 2*pi*r*h 
 	{
-		return super.findCircumference()*super.getRadius() + 2*Math.PI*super.getRadius()*height;
+		return findCircumference()*getRadius() + 2*Math.PI*getRadius()*height;
 	}
 	double findVolume()
 	{
-		return super.getRadius() * super.getRadius() * this.height * Math.PI;
+		return getRadius() * getRadius() * height * Math.PI;
+	}
+	double findInnerVolume()
+	{
+		return Math.PI * (getRadius() - thickness) * (getRadius() - thickness) * height;
 	}
 	double findSurfaceArea()
 	{
@@ -31,20 +50,25 @@ class Cylinder extends Circle
 	}
 	double findWeight()
 	{
-		return findVolume()*this.getMaterialDencity();
+		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
 	}
 	
 
 	//###
 	// Constructors
 	//###
-	Cylinder(int r, int h)
+	Cylinder(int r, int h, double t)
 	{
 		super(r);
 		height=h;
+		thickness=t;
+	}
+	Cylinder(int r, int h)
+	{
+		this(r, h, r);
 	}
 	Cylinder()
 	{
-		this(1,1); // bruker metoden over (constructoren) til å sette default verdier. 
+		this(1,1,1); // bruker metoden over (constructoren) til å sette default verdier. 
 	}
 }
