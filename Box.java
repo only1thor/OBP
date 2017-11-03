@@ -5,27 +5,15 @@ public class Box extends Rectangle
 	//##
 	// Getters and setters
 	//##
-	/**
-	 * @return the height
-	 */
 	public double getHeight() {
 		return height;
 	}
-	/**
-	 * @param height the height to set
-	 */
 	public void setHeight(double height) {
 		this.height = height;
 	}
-	/**
-	 * @return the thickness
-	 */
 	public double getThickness() {
 		return thickness;
 	}
-	/**
-	 * @param thickness the thickness to set
-	 */
 	public void setThickness(double thickness) {
 		this.thickness = thickness;
 	}

@@ -51,6 +51,8 @@ public class Cone extends Circle
 	// R is the radius
 	// T is the thickness
 	// (all capital variables are known values)
+	// after finding one of the sides and an angle 
+	// finding the rest of the inner geometry is trivial.
 
 	double findInnerVolume()
 	{

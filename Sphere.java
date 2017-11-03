@@ -21,7 +21,7 @@ public class Sphere extends Circle
 	// Methods
 	//##
 
-	private int powThree(double x)
+	private double powThree(double x)
 	{
 		return x*x*x; 
 	}
@@ -31,7 +31,7 @@ public class Sphere extends Circle
 	}
 
 	double findVolume() {
-		return (4*Math.PI*powThree(getRadius()))/3;
+		return (4*Math.PI*powThree( (double)getRadius() ) )/3;
 	}
 	double findInnerVolume()
 	{

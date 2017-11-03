@@ -10,27 +10,15 @@ public abstract class Rectangle extends GeometricObject
 	//##
 	// Getters and setters
 	//##
-	/**
-	 * @return the length
-	 */
 	public double getLength() {
 		return length;
 	}
-	/**
-	 * @param length the length to set
-	 */
 	public void setLength(double length) {
 		this.length = length;
 	}
-	/**
-	 * @return the width
-	 */
 	public double getWidth() {
 		return width;
 	}
-	/**
-	 * @param width the width to set
-	 */
 	public void setWidth(double width) {
 		this.width = width;
 	}
