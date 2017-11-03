@@ -32,10 +32,6 @@ class Cylinder extends Circle
 	//##
 	// methods
 	//##
-	double findArea() // (2*pi*r)*r*h + 2*pi*r*h 
-	{
-		return findCircumference()*getRadius() + 2*Math.PI*getRadius()*height;
-	}
 	double findVolume()
 	{
 		return getRadius() * getRadius() * height * Math.PI;
@@ -44,9 +40,9 @@ class Cylinder extends Circle
 	{
 		return Math.PI * (getRadius() - thickness) * (getRadius() - thickness) * height;
 	}
-	double findSurfaceArea()
+	double findSurfaceArea() // (2*pi*r)*r*h + 2*pi*r*h 
 	{
-		return findArea();
+		return findCircumference()*getRadius() + 2*Math.PI*getRadius()*height;
 	}
 	double findWeight()
 	{

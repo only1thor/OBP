@@ -3,7 +3,6 @@
 public abstract class Circle extends GeometricObject
 {
 	private int radius;
-	abstract double findArea();
 	abstract double findVolume();
 	abstract double findSurfaceArea();
 	abstract double findWeight();
@@ -26,6 +25,10 @@ public abstract class Circle extends GeometricObject
 	double findCircumference()
 	{
 		return 2*radius*Math.PI;
+	}
+	double findArea()
+	{
+		return Math.PI*radius*radius;
 	}
 	
 	//###
