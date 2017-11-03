@@ -1,7 +1,7 @@
-public abstract class Cone extends Circle
+public class Cone extends Circle
 {
-	int height;
-	double thickness;
+	private int height;
+	private double thickness;
 
 	//##
 	// Getters and setters
@@ -70,6 +70,17 @@ public abstract class Cone extends Circle
 		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
 	}
 
+	@Override
+	public String toString() {
+		String enStreng = "# Cone #"  + "\n" +
+							super.toString() + "\n" +
+							"Volum:" + findVolume() + "\n" +
+							"Tykkelse" + thickness + "\n" +
+							"Hulerom:" + findInnerVolume() + "\n" +
+							"Overflate:" + findSurfaceArea() + "\n" +
+							"Vekt:" + findWeight();
+		return enStreng;
+	}
 	
 	//###  
 	// Constructors

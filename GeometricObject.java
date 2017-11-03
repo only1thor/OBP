@@ -3,8 +3,8 @@ public abstract class GeometricObject
 	private static double materialDencity; //skal inneholde egenvekten til objektet
 	
 	abstract double findArea();
-	abstract double findVolume();
 	abstract double findCircumference();
+	abstract double findVolume();
 	abstract double findSurfaceArea();
 	abstract double findWeight();
 	
@@ -17,6 +17,12 @@ public abstract class GeometricObject
 	{
 		this.materialDencity=x;
 	}
+
+	@Override
+	public String toString() {
+		return "Matreal tetthet:" + materialDencity;
+	}
+
 	//###
 	// Constructors
 	//###

@@ -49,6 +49,17 @@ class Cylinder extends Circle
 		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
 	}
 	
+	@Override
+	public String toString() {
+		String enStreng = "# Cylinder #" + "\n" +
+							super.toString() + "\n" +
+							"Volum:" + findVolume() + "\n" +
+							"Tykkelse" + thickness + "\n" +
+							"Hulerom:" + findInnerVolume() + "\n" +
+							"Overflate:" + findSurfaceArea() + "\n" +
+							"Vekt:" + findWeight();
+		return enStreng;
+	}
 
 	//###
 	// Constructors

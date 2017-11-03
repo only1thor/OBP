@@ -1,4 +1,4 @@
-public abstract class template
+public class template
 {
 	//##
 	// Getters and setters

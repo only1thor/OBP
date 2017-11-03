@@ -30,7 +30,15 @@ public abstract class Circle extends GeometricObject
 	{
 		return Math.PI*radius*radius;
 	}
-	
+	@Override
+	public String toString() {
+		String enStreng;
+		enStreng = super.toString() + "\n" +
+					"Radius:" + getRadius() + "\n" +
+					"Areal:" + findArea() + "\n" +
+					"Omkrets:" + findCircumference();
+		return enStreng;
+	}
 	//###
 	// Constructors
 	//###
