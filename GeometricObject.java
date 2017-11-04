@@ -10,12 +10,7 @@ public abstract class GeometricObject
 	
 	double getMaterialDencity()
 	{
-		return this.materialDencity;
-	}
-	
-	void setMaterialDencity(double x)
-	{
-		this.materialDencity=x;
+		return materialDencity;
 	}
 
 	@Override
