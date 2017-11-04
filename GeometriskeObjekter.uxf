@@ -4,18 +4,17 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
+      <x>530</x>
       <y>0</y>
       <w>280</w>
       <h>220</h>
     </coordinates>
     <panel_attributes>_object: GeometricObject_
 --
-_-materialDencity_
+_-double materialDencity_
 
 --
 +getMaterialDencity(): double
-+setMaterialDencity(double x)
 +toString(): String
 
 +findArea(): abstract double 
@@ -29,20 +28,19 @@ _-materialDencity_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>660</y>
+      <x>0</x>
+      <y>650</y>
       <w>280</w>
       <h>360</h>
     </coordinates>
     <panel_attributes>_object: Cylinder_
 --
 _-double materialDencity_
-_-int radius_
-_-int height_
-_-double thickness_
+-int radius
+-int height
+-double thickness
 --
 +getMaterialDencity(): double
-+setMaterialDencity(double x)
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
@@ -63,20 +61,17 @@ _-double thickness_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>300</y>
+      <x>300</x>
+      <y>280</y>
       <w>280</w>
-      <h>300</h>
+      <h>260</h>
     </coordinates>
     <panel_attributes>_object: Circle_
 --
 _-double materialDencity_
-_-int radius_
-
-
+-int radius
 --
 +getMaterialDencity(): double
-+setMaterialDencity(double x)
 +getRadius(): int
 setRadius(int x)
 
@@ -93,20 +88,19 @@ setRadius(int x)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>660</y>
+      <x>300</x>
+      <y>650</y>
       <w>280</w>
-      <h>370</h>
+      <h>350</h>
     </coordinates>
     <panel_attributes>_object: Cone_
 --
 _-double materialDencity_
-_-int radius_
-_-int height_
-_-double thickness_
+-int radius
+-int height
+-double thickness
 --
 +getMaterialDencity(): double
-+setMaterialDencity(double x)
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
@@ -127,64 +121,63 @@ _-double thickness_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>590</y>
+      <x>120</x>
+      <y>530</y>
       <w>200</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>210</y>
+      <w>270</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;180.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;250.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>210</y>
-      <w>220</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;90.0;200.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>460</x>
-      <y>590</y>
+      <y>530</y>
       <w>30</w>
-      <h>90</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>590</y>
+      <x>570</x>
+      <y>530</y>
       <w>180</w>
-      <h>90</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>160.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>620</x>
-      <y>660</y>
+      <x>600</x>
+      <y>650</y>
       <w>280</w>
       <h>370</h>
     </coordinates>
     <panel_attributes>_object: Sphere_
 --
 _-double materialDencity_
-_-int radius_
-_-int height_
-_-double thickness_
+-int radius
+-int height
+-double thickness
 --
 +getMaterialDencity(): double
-+setMaterialDencity(double x)
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
@@ -202,5 +195,90 @@ _-double thickness_
 +findWeight(): double 
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>270</y>
+      <w>280</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>_object: Rectangle_
+--
+_-double materialDencity _
+-double length
+-double width
+--
++getMaterialDencity(): double
++getLength(): double
++setLength(double l)
++getWidth(): double
++setWidth(double w)
+
++toString(): String
++findArea(): double 
++findCircumference(): double 
+
++findVolume(): abstract double 
++findSurfaceArea(): abstract double 
++findWeight(): abstract double 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>210</y>
+      <w>270</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>650</y>
+      <w>280</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>_object: Box_
+--
+_-double materialDencity _
+-double length
+-double width
+-thickness
+--
++getMaterialDencity(): double
++getLength(): double
++setLength(double l)
++getWidth(): double
++setWidth(double w)
++getThickness(): double
++setThickness(double t)
+
++toString(): String
++findArea(): double 
++findCircumference(): double 
++findVolume(): double 
++findInnerVolume(): double
++findSurfaceArea(): double 
++findWeight(): double 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>560</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;90.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
