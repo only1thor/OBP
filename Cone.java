@@ -76,6 +76,7 @@ public class Cone extends Circle
 	public String toString() {
 		String enStreng = "# Cone #"  + "\n" +
 							super.toString() + "\n" +
+							"Høyde:" + height  + "\n" + 
 							"Volum:" + findVolume() + "\n" +
 							"Tykkelse" + thickness + "\n" +
 							"Hulerom:" + findInnerVolume() + "\n" +

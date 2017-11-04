@@ -53,6 +53,7 @@ class Cylinder extends Circle
 	public String toString() {
 		String enStreng = "# Cylinder #" + "\n" +
 							super.toString() + "\n" +
+							"Høyde:" + height  + "\n" + 
 							"Volum:" + findVolume() + "\n" +
 							"Tykkelse" + thickness + "\n" +
 							"Hulerom:" + findInnerVolume() + "\n" +

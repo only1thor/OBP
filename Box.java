@@ -27,11 +27,11 @@ public class Box extends Rectangle
 	}
 
 	double findVolume() {
-		return getHeight()*getLength()*height;
+		return height*getLength()*height;
 	}
 	double findInnerVolume()
 	{
-		return ( getHeight() - thickness)*( getLength - thickness )*( height - thickness );
+		return ( height - thickness)*( getLength - thickness )*( height - thickness );
 	}
 	double findWeight() {
 		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
@@ -40,6 +40,7 @@ public class Box extends Rectangle
 	public String toString() {
 		String enStreng = "# Box #"  + "\n" +
 							super.toString() + "\n" +
+							"Høyde:" + height  + "\n" + 
 							"Volum:" + findVolume() + "\n" +
 							"Tykkelse" + thickness + "\n" +
 							"Hulerom:" + findInnerVolume() + "\n" +
