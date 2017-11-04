@@ -23,6 +23,6 @@ public abstract class GeometricObject
 	//###
 	GeometricObject()
 	{
-		setMaterialDencity(7.8);
+		materialDencity = 7.8;
 	}
 }

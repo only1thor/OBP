@@ -45,8 +45,8 @@ public class Sphere extends Circle
 	public String toString() {
 		String enStreng = "# Sphere #"  + "\n" +
 							super.toString() + "\n" +
-							"Volum:" + findVolume() + "\n" +
 							"Tykkelse" + thickness + "\n" +
+							"Volum:" + findVolume() + "\n" +
 							"Hulerom:" + findInnerVolume() + "\n" +
 							"Overflate:" + findSurfaceArea() + "\n" +
 							"Vekt:" + findWeight();

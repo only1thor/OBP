@@ -54,8 +54,8 @@ class Cylinder extends Circle
 		String enStreng = "# Cylinder #" + "\n" +
 							super.toString() + "\n" +
 							"Høyde:" + height  + "\n" + 
-							"Volum:" + findVolume() + "\n" +
 							"Tykkelse" + thickness + "\n" +
+							"Volum:" + findVolume() + "\n" +
 							"Hulerom:" + findInnerVolume() + "\n" +
 							"Overflate:" + findSurfaceArea() + "\n" +
 							"Vekt:" + findWeight();

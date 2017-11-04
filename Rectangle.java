@@ -49,4 +49,13 @@ public abstract class Rectangle extends GeometricObject
 	//###
 	// Constructors
 	//###
+	Rectangle(double l,double w)
+	{
+		length = l;
+		width = w;
+	}
+	Rectangle()
+	{
+		this(1, 1);
+	}
 }
