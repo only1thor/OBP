@@ -5,9 +5,9 @@
     <id>UMLClass</id>
     <coordinates>
       <x>530</x>
-      <y>0</y>
+      <y>100</y>
       <w>280</w>
-      <h>220</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>_object: GeometricObject_
 --
@@ -17,11 +17,11 @@ _-double materialDencity_
 +getMaterialDencity(): double
 +toString(): String
 
-+findArea(): abstract double 
-+findCircumference(): abstract double 
-+findVolume(): abstract double 
-+findSurfaceArea(): abstract double 
-+findWeight(): abstract double 
++findArea(): double 
++findCircumference(): double 
+/+findVolume(): double /
+/+findSurfaceArea(): double /
+/+findWeight(): double /
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -29,28 +29,21 @@ _-double materialDencity_
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>650</y>
+      <y>600</y>
       <w>280</w>
-      <h>360</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>_object: Cylinder_
 --
-_-double materialDencity_
--int radius
 -int height
 -double thickness
 --
-+getMaterialDencity(): double
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
 +setThickness(int x)
-+getRadius(): int
--setRadius(int x)
 
 +toString(): String
-+findArea(): double 
-+findCircumference(): double 
 +findVolume(): double  
 +findInnerVolume(): double 
 +findSurfaceArea(): double 
@@ -62,26 +55,20 @@ _-double materialDencity_
     <id>UMLClass</id>
     <coordinates>
       <x>300</x>
-      <y>280</y>
+      <y>380</y>
       <w>280</w>
-      <h>260</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>_object: Circle_
 --
-_-double materialDencity_
 -int radius
 --
-+getMaterialDencity(): double
 +getRadius(): int
-setRadius(int x)
++setRadius(int x)
 
 +toString(): String
 +findArea(): double 
 +findCircumference(): double 
-
-+findVolume(): abstract double 
-+findSurfaceArea(): abstract double 
-+findWeight(): abstract double 
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -89,28 +76,21 @@ setRadius(int x)
     <id>UMLClass</id>
     <coordinates>
       <x>300</x>
-      <y>650</y>
+      <y>600</y>
       <w>280</w>
-      <h>350</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>_object: Cone_
 --
-_-double materialDencity_
--int radius
 -int height
 -double thickness
 --
-+getMaterialDencity(): double
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
 +setThickness(int x)
-+getRadius(): int
-+setRadius(int x)
 
 +toString(): String
-+findArea(): double 
-+findCircumference(): double 
 +findVolume(): double  
 +findInnerVolume(): double 
 +findSurfaceArea(): double 
@@ -122,72 +102,65 @@ _-double materialDencity_
     <id>Relation</id>
     <coordinates>
       <x>120</x>
-      <y>530</y>
+      <y>520</y>
       <w>200</w>
-      <h>140</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;120.0;180.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;180.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>420</x>
-      <y>210</y>
+      <y>290</y>
       <w>270</w>
-      <h>90</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;250.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;250.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>530</y>
+      <y>520</y>
       <w>30</w>
-      <h>140</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>570</x>
-      <y>530</y>
+      <y>520</y>
       <w>180</w>
-      <h>140</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>160.0;120.0;10.0;10.0</additional_attributes>
+    <additional_attributes>160.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>600</x>
-      <y>650</y>
+      <y>600</y>
       <w>280</w>
-      <h>370</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>_object: Sphere_
 --
-_-double materialDencity_
--int radius
 -int height
 -double thickness
 --
-+getMaterialDencity(): double
 +getHeight(); int
 +setHeight(int x)
 +getThickness(): int
 +setThickness(int x)
-+getRadius(): int
-+setRadius(int x)
 
 +toString(): String
-+findArea(): double 
-+findCircumference(): double 
 +findVolume(): double  
 +findInnerVolume(): double 
 +findSurfaceArea(): double 
@@ -199,17 +172,15 @@ _-double materialDencity_
     <id>UMLClass</id>
     <coordinates>
       <x>790</x>
-      <y>270</y>
+      <y>350</y>
       <w>280</w>
-      <h>300</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>_object: Rectangle_
 --
-_-double materialDencity _
 -double length
 -double width
 --
-+getMaterialDencity(): double
 +getLength(): double
 +setLength(double l)
 +getWidth(): double
@@ -218,10 +189,6 @@ _-double materialDencity _
 +toString(): String
 +findArea(): double 
 +findCircumference(): double 
-
-+findVolume(): abstract double 
-+findSurfaceArea(): abstract double 
-+findWeight(): abstract double 
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -229,7 +196,7 @@ _-double materialDencity _
     <id>Relation</id>
     <coordinates>
       <x>670</x>
-      <y>210</y>
+      <y>290</y>
       <w>270</w>
       <h>80</h>
     </coordinates>
@@ -240,28 +207,21 @@ _-double materialDencity _
     <id>UMLClass</id>
     <coordinates>
       <x>900</x>
-      <y>650</y>
+      <y>600</y>
       <w>280</w>
-      <h>350</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>_object: Box_
 --
-_-double materialDencity _
--double length
--double width
+-double height
 -thickness
 --
-+getMaterialDencity(): double
-+getLength(): double
-+setLength(double l)
-+getWidth(): double
-+setWidth(double w)
++getHeight(): double
++setHeight(double h)
 +getThickness(): double
 +setThickness(double t)
 
 +toString(): String
-+findArea(): double 
-+findCircumference(): double 
 +findVolume(): double 
 +findInnerVolume(): double
 +findSurfaceArea(): double 
@@ -273,11 +233,11 @@ _-double materialDencity _
     <id>Relation</id>
     <coordinates>
       <x>920</x>
-      <y>560</y>
+      <y>540</y>
       <w>130</w>
-      <h>110</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>110.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>110.0;60.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
