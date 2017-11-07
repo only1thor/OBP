@@ -57,7 +57,7 @@ class Cylinder extends Circle
 	}
 	double findInnerVolume()
 	{
-		return Math.PI * Math.pow((getRadius() - thickness),2) * height;
+		return Math.PI * Math.pow((getRadius() - thickness),2) * (height - 2*thickness);
 	}
 	double findSurfaceArea() // (2*pi*r)*r*h + 2*pi*r*h 
 	{
