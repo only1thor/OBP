@@ -184,7 +184,6 @@ _-double materialDencity_
 +setThickness(int x)
 +getRadius(): int
 +setRadius(int x)
--powThree(double x): double
 
 +toString(): String
 +findArea(): double 

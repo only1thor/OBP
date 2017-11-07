@@ -160,21 +160,19 @@
       >+getRadius(): int</text
       ><text x="5" font-size="14px" y="205.3125" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+setRadius(int x)</text
-      ><text x="5" font-size="14px" y="221.4219" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >-powThree(double x): double</text
-      ><text x="5" font-size="14px" y="253.6406" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="237.5312" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+toString(): String</text
-      ><text x="5" font-size="14px" y="269.75" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="253.6406" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findArea(): double </text
-      ><text x="5" font-size="14px" y="285.8594" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="269.75" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findCircumference(): double </text
-      ><text x="5" font-size="14px" y="301.9688" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="285.8594" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findVolume(): double  </text
-      ><text x="5" font-size="14px" y="318.0781" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="301.9688" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findInnerVolume(): double </text
-      ><text x="5" font-size="14px" y="334.1875" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="318.0781" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findSurfaceArea(): double </text
-      ><text x="5" font-size="14px" y="350.2969" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      ><text x="5" font-size="14px" y="334.1875" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+findWeight(): double </text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(300,650)" stroke-opacity="0" stroke="rgb(255,255,255)"
