@@ -41,7 +41,7 @@ public class Sphere extends Circle
 	}
 	double findInnerVolume()
 	{
-		return Math.pow((getRadius() - thickness),3);
+		return 4*Math.PI*Math.pow((getRadius() - thickness),3);
 	}
 	double findWeight() 
 	{
