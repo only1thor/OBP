@@ -2,21 +2,33 @@
 
 public abstract class Circle extends GeometricObject
 {
-	private int radius;
-	abstract double findVolume();
-	abstract double findSurfaceArea();
-	abstract double findWeight();
+	private double radius;
 	
 	//##
 	// Getters and setters
 	//##
-	int getRadius()
+	double getRadius()
 	{
 		return this.radius;
 	}
-	void setRadius(int x)
+	void setRadius(double x)
 	{
 		this.radius=x;
+	}
+
+	//###
+	// Constructors
+	//###
+	Circle()
+	{
+		super();
+		radius = 1;
+	}
+	
+	Circle(double x)
+	{
+		super();
+		radius=x;
 	}
 
 	//##
@@ -28,7 +40,7 @@ public abstract class Circle extends GeometricObject
 	}
 	double findArea()
 	{
-		return Math.PI*radius*radius;
+		return Math.PI*Math.pow(radius, 2);
 	}
 	@Override
 	public String toString() {
@@ -38,19 +50,5 @@ public abstract class Circle extends GeometricObject
 					"Areal:" + findArea() + "\n" +
 					"Omkrets:" + findCircumference();
 		return enStreng;
-	}
-	//###
-	// Constructors
-	//###
-	Circle()
-	{
-		super();
-		radius = 1;
-	}
-	
-	Circle(int x)
-	{
-		super();
-		radius=x;
 	}
 }
