@@ -75,7 +75,7 @@ public class Cone extends Circle
 	}
 
 	double findWeight() {
-		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
+		return (findVolume() - findInnerVolume())*getMaterialDencity();
 	}
 
 	@Override
