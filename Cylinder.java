@@ -1,16 +1,16 @@
 class Cylinder extends Circle 
 {
-	private int height;
+	private double height;
 	private double thickness;
 
 	//##
 	// Getters and setters
 	//##
-	public int getHeight()
+	public double getHeight()
 	{
 		return height;
 	}
-	public void setHeight(int x)
+	public void setHeight(double x)
 	{
 		height=x;
 	}
@@ -27,6 +27,24 @@ class Cylinder extends Circle
 			thickness = getRadius()/2.0;
 			System.out.println("The thickness was invalid, thickness set to:" + getThickness() );
 		}
+	}
+	
+	//###
+	// Constructors
+	//###
+	Cylinder(double r, double h, double t)
+	{
+		super(r);
+		height=h;
+		thickness=t;
+	}
+	Cylinder(double r, double h)
+	{
+		this(r, h, r);
+	}
+	Cylinder()
+	{
+		this(1,1,1); // bruker metoden over (constructoren) til å sette default verdier. 
 	}
 
 	//##
@@ -60,23 +78,5 @@ class Cylinder extends Circle
 							"Overflate:" + findSurfaceArea() + "\n" +
 							"Vekt:" + findWeight();
 		return enStreng;
-	}
-
-	//###
-	// Constructors
-	//###
-	Cylinder(int r, int h, double t)
-	{
-		super(r);
-		height=h;
-		thickness=t;
-	}
-	Cylinder(int r, int h)
-	{
-		this(r, h, r);
-	}
-	Cylinder()
-	{
-		this(1,1,1); // bruker metoden over (constructoren) til å sette default verdier. 
 	}
 }
