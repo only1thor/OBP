@@ -1,44 +1,50 @@
 public class Cone extends Circle
 {
-	private int height;
+	private double height;
 	private double thickness;
 
 	//##
 	// Getters and setters
 	//##
-	/**
-	 * @return the height
-	 */
-	public int getHeight() {
+	public double getHeight() 
+	{
 		return height;
 	}
-	/**
-	 * @param height the height to set
-	 */
-	public void setHeight(int height) {
+	public void setHeight(double height) 
+	{
 		this.height = height;
 	}
-	/**
-	 * @return the thickness
-	 */
-	public double getThickness() {
+	public double getThickness() 
+	{
 		return thickness;
 	}
-	/**
-	 * @param thickness the thickness to set
-	 */
-	public void setThickness(double thickness) {
+	public void setThickness(double thickness) 
+	{
 		this.thickness = thickness; // ! Remember to add a check to avoid negative volume 
+	}
+	
+	//###  
+	// Constructors
+	//###
+	Cone(double r,double h, double t)
+	{
+		setRadius(r);
+		height=h;
+		thickness = t;
+	}
+	Cone()
+	{
+		this(1, 1, 1);
 	}
 
 
 	//##
 	// Methods
 	//##
-	double findSurfaceArea() {
+	double findSurfaceArea() 
+	{
 		return Math.PI*getRadius()*Math.sqrt(getRadius()*getRadius() + height*height)  + findArea(); //pi*r*s + pi*r²
 	}
-
 
 	//##
 	// How to find inner radius
@@ -73,7 +79,8 @@ public class Cone extends Circle
 	}
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		String enStreng = "# Cone #"  + "\n" +
 							super.toString() + "\n" +
 							"Høyde:" + height  + "\n" + 
@@ -83,19 +90,5 @@ public class Cone extends Circle
 							"Overflate:" + findSurfaceArea() + "\n" +
 							"Vekt:" + findWeight();
 		return enStreng;
-	}
-	
-	//###  
-	// Constructors
-	//###
-	Cone(int r,int h, double t)
-	{
-		setRadius(r);
-		height=h;
-		thickness = t;
-	}
-	Cone()
-	{
-		this(1, 1, 1);
 	}
 }

@@ -17,7 +17,8 @@ class Cylinder extends Circle
 	public double getThickness() {
 		return thickness;
 	}
-	public void setThickness(Double x) {
+	public void setThickness(Double x) 
+	{
 		if (thickness <= getRadius() & thickness > 0 ) 
 		{
 			thickness = x;
@@ -28,7 +29,7 @@ class Cylinder extends Circle
 			System.out.println("The thickness was invalid, thickness set to:" + getThickness() );
 		}
 	}
-	
+
 	//###
 	// Constructors
 	//###
@@ -52,11 +53,11 @@ class Cylinder extends Circle
 	//##
 	double findVolume()
 	{
-		return getRadius() * getRadius() * height * Math.PI;
+		return Math.pow(getRadius(), 2) * height * Math.PI;
 	}
 	double findInnerVolume()
 	{
-		return Math.PI * (getRadius() - thickness) * (getRadius() - thickness) * height;
+		return Math.PI * Math.pow((getRadius() - thickness),2) * height;
 	}
 	double findSurfaceArea() // (2*pi*r)*r*h + 2*pi*r*h 
 	{
@@ -64,11 +65,12 @@ class Cylinder extends Circle
 	}
 	double findWeight()
 	{
-		return findVolume()*getMaterialDencity() - findInnerVolume()*getMaterialDencity();
+		return (findVolume() - findInnerVolume())*getMaterialDencity();
 	}
 	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		String enStreng = "# Cylinder #" + "\n" +
 							super.toString() + "\n" +
 							"Høyde:" + height  + "\n" + 
